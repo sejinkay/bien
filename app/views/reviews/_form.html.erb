@@ -16,6 +16,10 @@
 <%= f.text_field :title %>
 </p>
 <p>
+<%= f.label :restaurant %>
+<%= f.text_area :restaurant %>
+</p>
+<p>
 <%= f.label :body %>
 <%= f.text_area :body %>
 </p>
@@ -23,7 +27,10 @@
 	<%= f.label :score %>
 	<%= f.number_field :score %>
 </p>
-
+<p>
+	<%= f.label :ambiance %>
+	<%= f.text_field :ambiance %>
+</p>
 <%= f.submit "Save review" %>
 
 	<% end %>
