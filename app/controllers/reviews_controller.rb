@@ -5,6 +5,7 @@ def index
 
 @price = params[:price]
 @cuisine = params[:cuisine]
+@location = params[:location]
 
 # start with all the reviews
 @reviews = Review.all
@@ -18,6 +19,11 @@ if @price.present?
 # filter by cuisine
 if @cuisine.present?
 	@reviews = @reviews.where(cuisine: @cuisine)
+	end
+
+# search near the location
+if @location.present?
+	@reviews = @reviews.near(@location)
 	end
 
 end
@@ -85,7 +91,7 @@ end
 
 
 def form_params
-params.require(:review).permit(:title, :restaurant, :price, :body, :cuisine, :score, :ambiance)
+params.require(:review).permit(:title, :restaurant, :price, :body, :cuisine, :score, :ambiance, :address)
 end
 
 end
