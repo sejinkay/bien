@@ -24,6 +24,9 @@ GEM
       erubi (~> 1.4)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.0, >= 1.0.3)
+    active_link_to (1.0.5)
+      actionpack
+      addressable
     activejob (5.2.0)
       activesupport (= 5.2.0)
       globalid (>= 0.3.6)
@@ -103,6 +106,7 @@ GEM
     nio4r (2.3.1)
     nokogiri (1.8.3-x86-mingw32)
       mini_portile2 (~> 2.3.0)
+    pg (0.19.0-x86-mingw32)
     public_suffix (3.0.2)
     puma (3.11.4)
     rack (2.0.5)
@@ -151,6 +155,9 @@ GEM
     selenium-webdriver (3.13.0)
       childprocess (~> 0.5)
       rubyzip (~> 1.2)
+    simple_form (4.0.1)
+      actionpack (>= 5.0)
+      activemodel (>= 5.0)
     sprockets (3.7.2)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
@@ -186,6 +193,7 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
+  active_link_to
   bootsnap (>= 1.1.0)
   byebug
   capybara (>= 2.15, < 4.0)
@@ -194,10 +202,12 @@ DEPENDENCIES
   duktape
   geocoder
   jbuilder (~> 2.5)
+  pg
   puma (~> 3.11)
   rails (~> 5.2.0)
   sass-rails (~> 5.0)
   selenium-webdriver
+  simple_form
   sqlite3
   turbolinks (~> 5)
   tzinfo-data
