@@ -1,6 +1,8 @@
 # Bien
 This is one of the projects from 8-week online Rails course by [Superhi](https://www.superhi.com/courses/ruby-on-rails)
 
+Checkout the deployed version [Here](https://bien-restaurant.herokuapp.com/)
+
 How to run
 ----
 
